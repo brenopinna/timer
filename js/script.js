@@ -8,7 +8,7 @@ const stopButton = document.getElementById('stop');
 startButton.addEventListener('click', () => {
    treatInputs(secInput, minInput, hourInput);
 
-   if(hourInput.value == minInput.value == secInput.value == 0) {
+   if(hourInput.value == 0 && minInput.value == 0 && secInput.value == 0) {
       alert("Insert some time!")
    }else{
       disableInputs([secInput, minInput, hourInput]);
