@@ -34,7 +34,7 @@ body{
 }
 
 .clock__input{
-   width: 1.3em;
+   width: calc(100%/3);
    background-color: transparent;
    border: none;
    outline: none;
