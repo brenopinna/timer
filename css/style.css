@@ -31,6 +31,7 @@ body{
 .clock{
    display: flex;
    justify-content: center;
+   align-items: center;
 }
 
 .clock__input{
@@ -88,4 +89,18 @@ body{
 
 .button--stop:hover{
    background-color: rgb(241, 38, 38);
+}
+
+@media screen and (max-width: 340px) {
+   .clock{
+      flex-direction: column;
+   }
+
+   .clock__input{
+      width: 100%;
+   }
+
+   .clock .two-points{
+      display: none;
+   }
 }
