@@ -14,7 +14,7 @@ startButton.addEventListener('click', () => {
       disableInputs([secInput, minInput, hourInput]);
       changeButtons(startButton, stopButton);
 
-      let timeLeft = (parseInt(secInput.value) + parseInt(minInput.value * 60) + parseInt(hourInput.value * 60 * 60));
+      let timeLeft = parseInt(secInput.value + minInput.value * 60 + hourInput.value * 60 * 60);
 
       const timer = setInterval(() => {
          timeLeft--;
